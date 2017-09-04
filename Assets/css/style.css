@@ -1,0 +1,11 @@
+.darkVador {
+	background-image: url("./../assets/darthvader_2x.jpg");
+	width:100%;
+	height:50%;
+}
+
+.headerStar {
+	background-image: url("./../assets/header.png");
+	width:100%;
+	height:50%;
+}
