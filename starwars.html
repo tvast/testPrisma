@@ -15,7 +15,7 @@
 <body>
 
   <nav class="black">
-    <div class="nav-wrapper black white-text container center">
+    <div class="nav-wrapper black white-text container">
       <a href="#" data-activates="mobile-demo" class="right button-collapse"><i class="material-icons">menu</i></a>
       <div class="container center">
         <ul class="hide-on-med-and-down">
@@ -38,7 +38,7 @@
       </ul>
     </div>
   </nav>
-  <div  class="headerStar center">
+  <div  class="headerStar background-img center">
       <img id="slide1" heigh="50%" width="40%" src="assets/assets/header.png">
   </div>
 
@@ -177,19 +177,17 @@
       $('#slide3').parallax("center", 1000, 0.2, true);
   })
 </script>
-
-<div class="header"></div>
-
-<script>
-var header = document.querySelector('.header');
-var origOffsetY = header.offsetTop;
-
-function onScroll(e) {
-  window.scrollY >= origOffsetY ? header.classList.add('sticky') :
-                                  header.classList.remove('sticky');
-}
-
-document.addEventListener('scroll', onScroll);
+<script type="text/javascript">
+    $(document).ready(function(){
+  $('.background-img').mousemove(function(e){
+    var pageX;
+    var pageY;
+    var amountMovedX = (e.pageX * -1 / 10);
+    var amountMovedY = (e.pageY * -1 / 10);
+    $('.values').html("<div>" + amountMovedX + 'px ' + amountMovedY + 'px' + "</div>");
+    $(this).css('background-position',amountMovedX+'px '+amountMovedY+'px');
+});
+  });
 </script>
 </body>
 </html>
