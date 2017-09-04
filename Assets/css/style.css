@@ -1,11 +1,34 @@
 .darkVador {
 	background-image: url("./../assets/darthvader_2x.jpg");
 	width:100%;
-	height:50%;
+	height:100%;
 }
 
 .headerStar {
-	background-image: url("./../assets/header.png");
+	background-image: url("./../assets/header-bg-2x.png");
 	width:100%;
-	height:50%;
+    height: 500px;
+    padding-top: 100px;
+}
+
+#slide2 {
+   background: url(./../assets/kiloren-2x.jpg) center 0 no-repeat fixed;
+   width:100%;
+	height: 1000px;
+}
+
+#slide3 {
+   background: url(./../assets/stormtroopers-2x.jpg) center 0 no-repeat fixed;
+   width:100%;
+   height: 1000px;
+  
+
+}
+
+.headerV {
+	padding-top: 10%;
+}
+
+nav {
+	position: fixed;
 }

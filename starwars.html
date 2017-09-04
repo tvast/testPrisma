@@ -38,11 +38,13 @@
     </div>
   </nav>
 
-  <div class="headerStar"></div>
+  <div class="headerStar center">
+      <img heigh="50%" width="40%" src="assets/assets/header.png">
+  </div>
 
-  <img width="100%" src="assets/assets/">
 
-  <div class="row container">
+
+  <div class="row container headerV">
     <div class="col s6">
       <h4>STAR WARS THE FORCE AWAKEN</h4>
       <p>Le passage de Lorem Ipsum standard, utilisé depuis 1500
@@ -62,8 +64,7 @@
       </div>
     </div>
 
-    <div class="rellax" data-rellax-speed="7">
-      <img width="100%" src="assets/assets/kiloren-2x.jpg">
+    <div id="slide2">
     </div>
 
     
@@ -81,8 +82,7 @@
         "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
       </div>
 
-      <div class="rellax" data-rellax-percentage="0,4">
-        <img width="100%" src="assets/assets/stormtroopers-2x.jpg">
+      <div id="slide3"> 
       </div>
 
       
@@ -142,15 +142,12 @@
     $(".button-collapse").sideNav();
   </script>
 
-  <script src="rellax/rellax.min.js"></script>
-<script>
-  // Start Rellax
-  var rellax = new Rellax('.rellax', {
-    center: true
-  });
-  
-  // End Rellax and reset parallax elements to their original positions
-  rellax.destroy();
+  <script type="text/javascript"> 
+  $(document).ready(function(){   
+      // $('#slide1').parallax("center", 0, 0.1, true);
+      $('#slide2').parallax("center", 900, 0.1, true);
+      $('#slide3').parallax("center", 100, 0.1, true);
+  })
 </script>
 </body>
 </html>
